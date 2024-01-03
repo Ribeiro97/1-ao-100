@@ -6,7 +6,7 @@
     <title>1 ao 100</title>
 
     <link rel="stylesheet" href="estilo/style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -16,16 +16,18 @@
     </header>
 
     <main id="table">
-        <label for="txt_n">Informe um número </label>
+        <label for="txt_n">Informe um número (1 ao 100)</label>
         <input type="number" name="txt_n" id="txt_n">
 
-        <input type="button" value="Adicionar">
+        <input type="button" value="Adicionar" onclick="Adicionar()">
 
-        <select name="t_number" id="t_number" onclick="Adicionar()">
+        <select name="t_number" id="t_number">
             <option value="n_1">aguardando número</option>
         </select>
 
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

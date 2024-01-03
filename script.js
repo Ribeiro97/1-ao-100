@@ -1,19 +1,18 @@
-let $tnumber = document.getElementById('t_number')
+let $txt_n = document.getElementById('txt_n')
 
-function Adicionar(){
-    let $txt_number = document.getElementById('txt_n').value
-    
-    if($txt_number.length == 0){
-        alert('Informe corretamente o campo')
-    }
-    
-    let $number = Number($txt_number)
+function Adicionar() {
 
-    else if($number < 0 || $number > 100){
-        alert ('Informe o número de 1 a 100')
-    }
+    if (!$txt_n.value.length || isNaN($number)) {
+        console.log('Preencha o campo corretamente')
+    } else {
+        let $number = Number($txt_n.value)
 
-    else{
-        alert('opa!')
+        if ($number < 0 || $number > 100) {
+            console.log('Informe um número dentro do esperado')
+        }
+
+        else {
+            
+        }
     }
 }
