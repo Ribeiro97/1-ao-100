@@ -31,8 +31,9 @@ function Calcular() {
     })
 
     $msg.innerHTML = `
-    O maior número da lista é ${$list[(($list.length)-1)]}
+    O maior número da lista é ${$list[(($list.length)-1)]} <br>
+    Menor número é ${$list[0]} <br>
+    A soma de todos os números é ${Somar($list)}<br>
+    A média da soma deles é ${(Somar($list))/2} <br>
     `
-
-
 }
