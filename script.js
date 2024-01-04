@@ -15,6 +15,7 @@ function Adicionar() {
             $list.push($number)
             let $quad = document.getElementById('quad_number')
             let $element_option = document.createElement('option')
+            $element_option.value = $number
             $element_option.textContent = `Valor ${$number} Adicionado`
             $quad.appendChild($element_option)
         }
@@ -37,3 +38,5 @@ function Calcular() {
     A média da soma deles é ${(Somar($list))/2} <br>
     `
 }
+
+
